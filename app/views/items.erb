@@ -1,0 +1,27 @@
+<div class="row">
+  <div class="small-12 small-centered columns">
+    <h1>Lily's Bucket List </h1>
+  </div>
+</div>
+
+<div class="row">
+  <div class="small-12 small-centered medium-6 medium-centered columns">
+    <ul>
+      <% @items.each do |item| %>
+        <li><%= item.name %></li>
+      <% end %>
+    </ul>
+  </div>
+</div>
+
+<div class="row">
+  <div class="small-6 small-centered columns">
+    <form action="/items" method="post" id="item-form">
+      <fieldset>
+        <legend>Add to my Bucket List</legend>
+        <input id="item_content" name="name" type="text"></input>
+        <input type="submit"></input>
+      </fieldset>
+    </form>
+  </div>
+</div>

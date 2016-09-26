@@ -1,0 +1,13 @@
+h1, body {
+  font-family: "Shadows Into Light", cursive;
+}
+
+body {
+  font-size: 20px;
+  background-color: #00ccff;
+  color: #ff0074;
+}
+
+h1 {
+  font-size: 30px;
+}
